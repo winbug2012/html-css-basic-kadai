@@ -31,42 +31,44 @@
       <section>
         <h3>私のおすすめ和菓子アンケートフォーム</h3>
         <form>
-          <!-- アンケートフォームのHTMLを記述してください -->
-            <label>氏名</label> 
-            <input type="text" placeholder="名前を入力してください">
+            <label for="name">氏名</label> 
+            <input type="text" id="name" name="name" placeholder="名前を入力してください">
             <br> 
-        
-            <label>年代</label> 
-            <select> 
+          
+            <label for="age">年代</label> 
+            <select id="age" name="age"> 
               <option>10代以下</option> 
               <option>20代</option> 
               <option>30代</option> 
               <option>40代以上</option> 
             </select>
             <br> 
-            <label>男性</label><input type="radio" name="gender"> 
-            <label>女性</label><input type="radio" name="gender"> 
-            <label>その他</label><input type="radio" name="gender"> 
-            
+          
+            <label for="male">男性</label>
+            <input type="radio" id="male" name="gender" value="male"> 
+            <label for="female">女性</label>
+            <input type="radio" id="female" name="gender" value="female"> 
+            <label for="other">その他</label>
+            <input type="radio" id="other" name="gender" value="other"> 
+          
             <br>
-            <label>おすすめ和菓子の名称</label> 
-            <textarea></textarea> 
+          
+            <label for="wagashi_name">おすすめ和菓子の名称</label> 
+            <input type="text" id="wagashi_name" name="wagashi_name" placeholder="和菓子の名前を入力">
             <br>
-        
-            
-            <label>おすすめする理由</label> 
-            <textarea></textarea> 
+          
+            <label for="reason">おすすめする理由</label> 
+            <textarea id="reason" name="reason" placeholder="理由を入力"></textarea>
             <br>
-
+          
+            <label for="privacy">個人情報保護方針に同意する</label> 
+            <input type="checkbox" id="privacy" name="privacy"> 
             <br> 
-            
-            <label>個人情報保護方針に同意する</label> 
-            <input type="checkbox"> 
-            <br> 
+          
             <input type="submit" value="送信"> 
             <input type="reset" value="リセット">
             <br> 
-        </form>
+          </form>
       </section>
     </article>
     <article>
