@@ -1,0 +1,29 @@
+html {
+    font-size: 20px;
+}
+
+body {
+    font-family: "Arial", "Meiryo", sans-serif;
+    text-align: center; /* 全てのテキストを中央寄せ */
+}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em; /* ルート要素のフォントサイズ（20px）の2倍 = 40px */
+    letter-spacing: 1.2em; /* フォントサイズの1.2倍 */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* 影（サイズ・色自由） */
+    border-bottom: 3px solid rgb(115, 115, 114); /* 下線 */
+}
+
+.blue {
+    color: skyblue;
+}
+
+.pink {
+    color: rgb(255, 192, 203);
+}
+
+/* #basic 内の p 要素だけ太字にする */
+#basic p {
+    font-weight: bold;
+}
